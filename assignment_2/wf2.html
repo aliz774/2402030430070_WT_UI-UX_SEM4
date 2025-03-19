@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Destinations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            color: #1a202c;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: 'Racing Sans One', cursive;
+            font-style: italic;
+            color: #1a202c; /* Changed to match the text color */
+            margin-left: -9rem; /* Adjust this value to align the logo */
+         }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media (min-width: 640px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 35px;
+        }
+        .card img {
+            width: 100%;
+            /* height: 12rem; */
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .card-price {
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+        .card-info {
+            display: flex;
+            align-items: center;
+            color: #718096;
+        }
+        .card-info i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><a href="index.html">jadoo</a></div>
+        </div>
+        <h1>Top Destinations</h1>
+        <div class="grid">
+            <div class="card">
+                <a href="wf3.html"><img src="https://storage.googleapis.com/a1aa/image/U9rPA7LgDyq6072j29rwLdtJ4fCC2NJ8Vg0TEA-2sk8.jpg" alt="Colosseum in Rome, Italy">
+                <div class="card-content">
+                    <h2 class="card-title">Rome, Italy</h2>
+                    <div class="card-price">$5.42k</div>
+                    <div class="card-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>10 Days Trip</span>
+                    </div>
+                </div></a>
+            </div>
+            <div class="card">
+               <a href="wf5.html"> <img src="https://storage.googleapis.com/a1aa/image/JxVaKlwL2ij_rwevT_wJ8WHgt9bDhQgpb4l18bsZ9dU.jpg" alt="Big Ben in London, UK">
+                <div class="card-content">
+                    <h2 class="card-title">London, UK</h2>
+                    <div class="card-price">$4.2k</div>
+                    <div class="card-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Days Trip</span>
+                    </div>
+                </div></a>
+            </div>
+            <div class="card">
+                <a href="wf4.html"><img src="https://storage.googleapis.com/a1aa/image/egnygGU3evqsSVLl2qyz4QayWs1N-X_4ueCjws2OJsc.jpg" alt="Cathedral in Europe">
+                <div class="card-content">
+                    <h2 class="card-title">Full Europe</h2>
+                    <div class="card-price">$15k</div>
+                    <div class="card-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>28 Days Trip</span>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

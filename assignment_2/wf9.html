@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Sign Up Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url('world-black-white-simple-wallpaper-preview.jpg'); /* Set background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repeating */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff; /* Default text color for visibility */
+        }
+
+        /* Logo */
+        .logo {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 1.25rem;
+            font-family: 'Racing Sans One', cursive;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff; /* White text for logo */
+        }
+
+        /* Sign Up Title */
+        .signup-title {
+            position: absolute;
+            top: 4rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #facc15; /* Yellow text for "SIGN UP" */
+        }
+
+        /* Sign Up Form Container */
+        .form-container {
+            background-color: rgba(174, 170, 170, 0.8);/* Semi-transparent blue background */
+            width: 100%;
+            max-width: 400px;
+            height: 60%; /* 2/3 of the viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        /* Input Fields */
+        .input-field {
+            width: 100%;
+            margin: 5px;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 9999px; /* Rounded-full effect */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            font-size: 1rem;
+            color: #000; /* Black text */
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .input-field:focus {
+            background-color: rgba(255, 255, 255, 0.9); /* Lighter semi-transparent white on focus */
+        }
+
+        /* Button */
+        .signup-button {
+            width: 100%;
+            margin-top: 5px;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 9999px; /* Rounded-full effect */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            font-size: 1rem;
+            font-weight: bold;
+            color: #000; /* Black text */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-button:hover {
+            background-color: #9ca3af;  /* Lighter semi-transparent white on hover */
+        }
+
+        /* Spacing Between Elements */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <a href="index.html" class="logo">jadoo</a>
+
+    <!-- Sign Up Title -->
+    <div class="signup-title">SIGN UP</div>
+
+    <!-- Sign Up Form -->
+    <div class="form-container">
+        <div class="flex flex-col space-y-4 mt-8">
+            <!-- Name Field -->
+            <input class="input-field" placeholder="Name" type="text" />
+
+            <!-- Email Field -->
+            <input class="input-field" placeholder="Email" type="email" />
+
+            <!-- Password Field -->
+            <input class="input-field" placeholder="Password" type="password" />
+
+            <!-- Sign Up Button -->
+            <button class="signup-button">sign up</button>
+        </div>
+    </div>
+</body>
+</html>

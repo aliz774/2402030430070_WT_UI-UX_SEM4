@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Travel Booking</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #fff;
+            color: #2d3748;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Header Logo */
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Racing Sans One', cursive;            
+            text-decoration: none;
+            color: #1a202c;
+            margin-left: -9rem;
+            margin-bottom: 2rem; /* Add spacing between logo and content */
+        }
+
+        /* Main Content */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        /* Left Column */
+        .left-column {
+            flex: 1;
+        }
+
+        /* Right Column */
+        .right-column {
+            flex: 1;
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                margin-left: 2rem;
+                margin-top: 0;
+            }
+        }
+
+        /* Steps Section */
+        .steps {
+            margin-top: 2rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .step-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .step-icon-yellow {
+            background-color: #f6e05e;
+        }
+
+        .step-icon-red {
+            background-color: #f56565;
+        }
+
+        .step-icon-blue {
+            background-color: #4299e1;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-description {
+            color: #718096;
+        }
+
+        /* Image Card */
+        .image-card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+
+        .image-card img {
+            border-radius: 0.5rem;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .image-card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-card-description {
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+
+        .image-card-icons {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-card-icons i {
+            color: #718096;
+        }
+
+        .image-card-people {
+            color: #718096;
+        }
+
+        /* Progress Card */
+        .progress-card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-card-text {
+            color: #718096;
+        }
+
+        .progress-card-title {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .progress-card-status {
+            color: #718096;
+        }
+
+        .progress-card-image {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <h1 class="logo">
+            <a href="index.html">jadoo</a>
+        </h1>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <p class="text-gray-500 mb-2" style="font-size: 1rem;">
+                    Easy and Fast
+                </p>
+                <h2 class="text-5xl font-bold title-font mb-8" style="font-size: 3rem;">
+                    Book Your Next Trip In 3 Easy Steps
+                </h2>
+                <div class="steps">
+                    <!-- Step 1 -->
+                    <div class="step">
+                        <div class="step-icon step-icon-yellow">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="step-title">
+                                Choose Destination
+                            </h3>
+                            <p class="step-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step">
+                        <div class="step-icon step-icon-red">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div>
+                            <h3 class="step-title">
+                                Make Payment
+                            </h3>
+                            <p class="step-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step">
+                        <div class="step-icon step-icon-blue">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div>
+                            <h3 class="step-title">
+                                Reach Airport on Selected Date
+                            </h3>
+                            <p class="step-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="image-card">
+                    <img alt="A woman in a red dress overlooking the white and blue buildings of Greece"
+                        src="https://storage.googleapis.com/a1aa/image/-qF-_0MRecHcvndnLFEd5_g6FUx3_FUGETTlgwJy_8o.jpg" />
+                    <h3 class="image-card-title">
+                        Trip To Greece
+                    </h3>
+                    <p class="image-card-description">
+                        14-29 June | by Robbin joseph
+                    </p>
+                    <div class="image-card-icons">
+                        <i class="fas fa-leaf"></i>
+                        <i class="fas fa-map"></i>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <p class="image-card-people">
+                        24 people going
+                    </p>
+                </div>
+                <div class="progress-card">
+                    <div>
+                        <p class="progress-card-text">
+                            Ongoing
+                        </p>
+                        <h4 class="progress-card-title">
+                            Trip to Rome
+                        </h4>
+                        <p class="progress-card-status">
+                            40% completed
+                        </p>
+                    </div>
+                    <img alt="Trip to Rome" class="progress-card-image"
+                        src="https://storage.googleapis.com/a1aa/image/jZsfyRyB_UdXPbsNsxt_OGuAJntnQIfoaOk5pvk_HOQ.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

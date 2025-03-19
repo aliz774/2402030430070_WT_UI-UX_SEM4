@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9fafb; /* Light gray background */
+            color: #374151; /* Dark gray text for visibility */
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            /* background-color: #fff; White background for header */
+        }
+
+        /* Logo */
+        .logo {
+            font-family: 'Racing Sans One', cursive;
+            font-size: 1.875rem; /* 30px */
+            font-weight: bold;
+            text-decoration: none; /* Remove underline */
+            color: #1a202c; /* Dark text for logo */
+        }
+
+        /* Navigation */
+        nav {
+            position: relative;
+            margin-left: auto; /* Push navigation to the right */
+        }
+
+        nav a {
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #374151; /* Dark gray text */
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 1rem;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        /* Centered Title */
+        .centered-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .centered-title.large {
+            font-size: 2rem; /* 32px */
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 40px;
+            position:relative;
+            color: #1a202c; /* Dark text for large titles */
+        }
+
+        .centered-title.small {
+            font-size: 1rem; /* 16px */
+            color: #4b5563; /* Slightly lighter gray for smaller titles */
+        }
+
+        /* Bold Text Block */
+        .bold-text-block {
+            font-weight: bold;
+            font-size: 20px;
+            color: #1a202c; /* Dark text for emphasis */
+            margin-top: 2rem;
+        }
+
+        /* Grid Layout for Services */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Service Card */
+        .service-card {
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 6rem;
+            height: 6rem;
+            margin: 0 auto 1rem;
+        }
+
+        .service-card h4 {
+            font-size: 1.125rem; /* 18px */
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1a202c; /* Dark text for service titles */
+        }
+
+        .service-card p {
+            font-size: 0.875rem; /* 14px */
+            color: #6b7280; /* Lighter gray for descriptions */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">jadoo</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Us Title -->
+        <h1 class="centered-title large">About Us</h1>
+
+        <!-- Why Choose Us Section -->
+        <section class="bold-text-block">
+            <p>WHY CHOOSE US</p>
+            <p>Crafting experiences, delivering success.</p>
+            <p>
+                Traveling can be overwhelming, but we’re here to make it enjoyable  and <br> stress-free. Let best stay
+                bookings.com be your guide in discovering <br> the world's most remarkable stays, and create lasting memories
+                wherever <br> you roam.
+            </p>
+            <p>15+ YEARS OF EXPERIENCE</p>
+        </section>
+
+        <!-- Services Section -->
+        <section>
+            <h3 class="centered-title small">CATEGORY</h3>
+            <h2 class="centered-title large">We Offer Best Services</h2>
+            <div class="grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img alt="Illustration of calculated weather"
+                        src="https://img.icons8.com/ios-filled/100/000000/partly-cloudy-day.png" />
+                    <h4>Calculated Weather</h4>
+                    <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img alt="Illustration of best flights"
+                        src="https://img.icons8.com/ios-filled/100/000000/airplane-take-off.png" />
+                    <h4>Best Flights</h4>
+                    <p>Engrossed listening. Park gate sell they west hard for the.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img alt="Illustration of local events"
+                        src="https://img.icons8.com/ios-filled/100/000000/microphone.png" />
+                    <h4>Local Events</h4>
+                    <p>Barton vanity itself do in it. Preferred to men it engrossed listening.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <img alt="Illustration of customization"
+                        src="https://img.icons8.com/ios-filled/100/000000/settings.png" />
+                    <h4>Customization</h4>
+                    <p>We deliver outsourced aviation services for military customers</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
